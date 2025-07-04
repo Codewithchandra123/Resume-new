@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import resPhoto from '../IMAGE/resphoto.jpg'; // Adjust '../' based on your file location
@@ -78,14 +79,32 @@ export default function Resume() {
                   href="https://chandra-new-portfolio.netlify.app"
                   target="_blank"
                 />
-                <ContactLine icon={MapPin} text="Andhra Pradesh, India (Remote/On-site)" />
+                <ContactLine icon={MapPin} text="Andhra Pradesh, India  " />
               </div>
             </div>
-            <img
-            src={resPhoto}
-            alt="Kancharla Chandra Teja"
-            className="w-76 h-56 rounded-full object-cover ring-4 ring-blue-400 dark:ring-blue-700 shadow-md"
-          />
+                          
+                <img
+                  src={resPhoto}
+                  alt="Kancharla Chandra Teja"
+                  className="
+                    /* flow / alignment */
+                    order-first md:order-none
+                    md:mx-auto shrink-0             /* centre on ≥ 768 px and stop it stretching */
+
+                    /* size – always square so the circle isn’t distorted */
+                    w-44  h-43                      /* default (≤ 639 px)  96 px */
+                    sm:w-42 sm:h-42                 /* ≥ 640 px            128 px */
+                    md:w-36 md:h-36                 /* ≥ 768 px            144 px */
+                    lg:w-40 lg:h-60                 /* ≥ 1024 px           160 px */
+
+                    /* appearance */
+                    rounded-full object-cover
+                    ring-4 ring-blue-400 dark:ring-blue-700
+                    shadow-md
+                  "
+                />
+
+
 
           </header>
           
@@ -108,7 +127,10 @@ export default function Resume() {
           {/* Professional Summary */}
           <Section title="About Me">
             <p>
-              I'm a passionate and results-driven Full-Stack & Java ,Python Developer with a strong desire to build dynamic, responsive, and scalable web applications. I thrive on solving problems, writing clean code, and building products that create meaningful user experiences. With a strong foundation in both frontend and backend development, I believe in continuous learning and collaboration as key ingredients to creating great software.
+              I'm a passionate and results-driven Full-Stack & Java ,Python Developer with a strong desire to build dynamic, responsive, and scalable web applications.
+               I thrive on solving problems, writing clean code, and building products that create meaningful user experiences. With a strong foundation in both frontend and
+                backend development, 
+              I believe in continuous learning and collaboration as key ingredients to creating great software and also Completed the more than 400 Labs on <strong>Google cloud skill boost</strong> and reached to the <strong>Arcade Legend Tier.</strong>
             </p>
           </Section>
 
@@ -168,7 +190,8 @@ export default function Resume() {
 
           {/* Education */}
          <Section title="Education">
-            <table className="w-full text-left mb-2">
+           <div className="sm:overflow-visible overflow-x-auto -mx-4 sm:mx-0">
+    <table className="w-full min-w-[32rem] text-left mb-2">
               <thead>
                 <tr className="border-b dark:border-gray-600">
                   <th className="py-2 font-semibold">Degree/Certificate</th>
@@ -203,6 +226,7 @@ export default function Resume() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </Section>
           
           {/* Current Learning & Interests */}
