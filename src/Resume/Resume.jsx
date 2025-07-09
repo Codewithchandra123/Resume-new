@@ -83,7 +83,7 @@ export default function Resume() {
               </div>
             </div>
                           
-{/*                 <img
+                <img
                   src={resPhoto}
                   alt="Kancharla Chandra Teja"
                   className="
@@ -102,7 +102,7 @@ export default function Resume() {
                     ring-4 ring-blue-400 dark:ring-blue-700
                     shadow-md
                   "
-                /> */}
+                />
 
 
 
