@@ -55,7 +55,7 @@ export default function Resume() {
                 Kancharla Chandra Teja
               </h1>
               <p className="mt-0.5 text-md font-medium">
-               Aspiring Full-Stack & Software Developer
+               Aspiring Full-Stack & Software Developer Roles
               </p>
               <div className="mt-2 space-y-0.5 text-xs">
                 <ContactLine icon={Mail} text="tejakancharla77@gmail.com"
