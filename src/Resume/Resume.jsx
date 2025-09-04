@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import resPhoto from "../IMAGE/resphoto.jpg"; // Adjust '../' based on your file location
+import mypic from "../IMAGE/mypic.jpg"; // Adjust '../' based on your file location
 import {
   Sun,
   Moon,
@@ -13,6 +13,7 @@ import {
   Globe,
   Languages as LanguagesIcon,
   Star,
+  MonitorPlayIcon,
 } from "lucide-react";
 
 /**
@@ -82,14 +83,15 @@ export default function Resume() {
               </div>
             </div>
 
-            {/* Right side - Profile Photo */}
+           {/* Right side - Profile Photo */}
             <div className="flex-shrink-0 flex justify-center md:justify-start items-center md:items-center md:ml-28 mt-4 md:mt-0 mr-20">
               <img
-                src={resPhoto}
+                src={mypic}
                 alt="Profile"
                 className="w-40 h-52 object-cover border-4 border-gray-300 dark:border-gray-600 shadow-lg rounded-lg"
               />
             </div>
+
           </header>
 
           {/* --- Quick Links --- */}
